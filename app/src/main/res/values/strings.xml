@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Audio Player</string>
+    <string name="setting_s">Setting</string>
+    <string name="about_app">About</string>
+    <string name="playlist">Chose Directory</string>
+    <string name="setting_activity_label">Setting Activity</string>
+    <string name="bind_a_keys">Bind a keys</string>
+    <string name="change_directory">Change Directory</string>
+    <string name="about_text">Copyright by ...</string>
+    <string name="path">Path: </string>
+    <string name="key_pressed">Key pressed: </string>
+    <string name="notification_title">Foreground ACtivity title</string>
+    <string name="notification_message">foregr messsage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

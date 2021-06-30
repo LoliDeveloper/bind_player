@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:focusable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:focusable="false"
+        android:id="@+id/action_chose_directory_button"
+        android:icon="@drawable/baseline_list_black_48dp"
+        android:title="@string/playlist"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:focusable="false"
+        android:id="@+id/action_setting_button"
+        android:icon="@drawable/baseline_settings_black_48dp"
+        android:title="@string/setting_s"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:focusable="false"
+        android:id="@+id/action_about_button"
+        android:title="@string/about_app"
+        app:showAsAction="never"/>
+</menu>

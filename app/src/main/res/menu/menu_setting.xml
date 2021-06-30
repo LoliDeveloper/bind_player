@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:focusable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:focusable="false"
+        android:id="@+id/action_setting_button"
+        android:icon="@drawable/baseline_settings_black_48dp"
+        android:title="@string/setting_s"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:focusable="false"
+        android:name="com.example.media_player.myfragments.EmptyFragment"
+        android:id="@+id/pressKeyFrag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:focusable="false"
+        android:id="@+id/delay_playlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pressKeyFrag"
+        android:text="Включить плейлист через N секунд \nс определённой громкостью" />
+
+    <LinearLayout
+        android:focusable="false"
+        android:id="@+id/block_linear_layout"
+        android:layout_below="@id/delay_playlist_button"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:focusable="false"
+            android:id="@+id/lock_button"
+            android:layout_width="0dp"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"
+            android:text="Блокировка" />
+        <Button
+            android:focusable="false"
+            android:id="@+id/unlock_button"
+            android:layout_width="0dp"
+            android:layout_weight=".50"
+            android:layout_height="wrap_content"
+            android:text="Разблокировка" />
+    </LinearLayout>
+
+    <Button
+        android:focusable="false"
+        android:layout_below="@id/block_linear_layout"
+        android:id="@+id/short_unlock_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Временная разблокировка " />
+    <Button
+        android:focusable="false"
+        android:layout_below="@id/short_unlock_button"
+        android:id="@+id/set_volume_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Установить громкость " />
+    <Button
+        android:focusable="false"
+        android:layout_below="@id/set_volume_button"
+        android:id="@+id/change_volume_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить громкость" />
+    <Button
+        android:focusable="false"
+        android:layout_below="@id/change_volume_button"
+        android:id="@+id/next_track_bind_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Следующий трек в плейлисте" />
+    <Button
+        android:focusable="false"
+        android:layout_below="@id/next_track_bind_button"
+        android:id="@+id/set_default_playlist_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Установить плейлист по умолччанию\nи его громкость" />
+    <Button
+        android:focusable="false"
+        android:id="@+id/showAllBinds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Показать все бинды" />
+</RelativeLayout>

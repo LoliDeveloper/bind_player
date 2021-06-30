@@ -1,0 +1,12 @@
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityFlags="flagRequestFilterKeyEvents"
+    android:focusable="false"
+
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackAllMask"
+    android:notificationTimeout="100"
+    android:canRetrieveWindowContent="true"
+    android:settingsActivity=""
+    android:packageNames="com.example.media_player"
+    android:canRequestFilterKeyEvents="true" />

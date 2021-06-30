@@ -1,0 +1,66 @@
+<RelativeLayout
+    android:focusable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.media_player.activities.BindingKeysActivity"
+    >
+
+    <RelativeLayout
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите время короткой разблокировки"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:id="@+id/heading_shortUnlock"/>
+
+        <EditText
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="#000"
+            android:layout_below="@id/heading_shortUnlock"
+            android:hint="Время разблокировки"
+            android:id="@+id/input_shortUnlock"/>
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_ok_shortUnlock"/>
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОТМЕНА"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_cancel_shortUnlock"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

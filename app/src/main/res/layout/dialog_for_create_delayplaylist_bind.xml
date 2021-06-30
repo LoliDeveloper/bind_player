@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:focusable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.media_player.activities.BindingKeysActivity"
+    >
+
+    <RelativeLayout
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выберите плейлист и введите число секунд"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:id="@+id/heading"/>
+
+        <Spinner
+            android:focusable="false"
+            android:paddingTop="20dp"
+            android:id="@+id/directory_spinner"
+            android:layout_width="match_parent"
+            android:layout_below="@id/heading"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="#000"
+            android:layout_below="@id/directory_spinner"
+            android:hint="Введите число секунд"
+            android:id="@+id/delayInput"/>
+
+        <EditText
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="number"
+            android:textColor="#000"
+            android:layout_below="@id/delayInput"
+            android:hint="Введите громкость 0 - 100%"
+            android:id="@+id/volumeInput"/>
+        <TextView
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_ok"/>
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОТМЕНА"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_cancel"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:focusable="false"
+            android:id="@+id/button_keybinds_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bind_a_keys" />
+
+        <Button
+            android:focusable="false"
+            android:id="@+id/Change_directory_button_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/change_directory" />
+
+        <TextView
+            android:focusable="false"
+            android:id="@+id/Path_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/path" />
+
+        <TextView
+            android:focusable="false"
+            android:id="@+id/key_pressed_TextViev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/key_pressed" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

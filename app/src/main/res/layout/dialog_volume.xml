@@ -1,0 +1,66 @@
+<RelativeLayout
+    android:focusable="false"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.media_player.activities.BindingKeysActivity"
+    >
+
+    <RelativeLayout
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Громкость (set / change)"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:id="@+id/heading_volume"/>
+
+        <EditText
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:textColor="#000"
+            android:layout_below="@id/heading_volume"
+            android:hint="От 0 до 100%"
+            android:id="@+id/input_volume"/>
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_ok_volume"/>
+
+        <TextView
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ОТМЕНА"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:textSize="18sp"
+            android:textColor="#33bbff"
+            android:id="@+id/action_cancel_volume"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
